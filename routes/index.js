@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 require("dotenv").config();
 const axios = require("axios");
-const background = process.env.BACKGROUND_COLOR;
+const background = process.env.BACKGROUND_COLOR || "black";
 
 const api = axios.create({
   baseURL: process.env.API_BASE_URL,
