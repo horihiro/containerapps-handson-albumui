@@ -99,6 +99,14 @@ jobs:
               --target-port 3000 \
               --type external
 
+            az containerapp dapr enable \
+              --name ${{ env.CONTAINERAPP_NAME }} \
+              --resource-group ${{ env.RESOURCE_GROUP_NAME }} \
+              --dapr-enable-api-logging true \
+              --dapr-app-id ${{ env.CONTAINERAPP_NAME }} \
+              --dapr-app-port 3000 \
+              --dapr-log-level debug
+
             container_name=$( \
               az containerapp show \
               --name ${{ env.CONTAINERAPP_NAME }} \
