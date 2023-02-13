@@ -102,7 +102,7 @@ jobs:
             az containerapp dapr enable \
               --name ${{ env.CONTAINERAPP_NAME }} \
               --resource-group ${{ env.RESOURCE_GROUP_NAME }} \
-              --dapr-enable-api-logging true \
+              --dapr-enable-api-logging \
               --dapr-app-id ${{ env.CONTAINERAPP_NAME }} \
               --dapr-app-port 3000 \
               --dapr-log-level debug
