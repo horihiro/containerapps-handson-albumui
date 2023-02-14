@@ -16,7 +16,7 @@ env:
   # Add envs
   RESOURCE_GROUP_NAME: rg-containers-cicd # 準備タスクで作成されたリソースグループ名をここに記載
   CONTAINERAPP_NAME: ctapp-demo-ui # 準備タスクで作成された API Container App 名をここに記載
-  API_BASE_URL: https://ctapp-demo-api.delightfulforest-1ca7a2b3.japaneast.azurecontainerapps.io # http://localhost:3500/v1.0/invoke/ctapp-demo-api/method # 準備タスクで作成された API Container App のアプリケーション URL をここに記載
+  API_BASE_URL: https://ctapp-demo-api.purplemeadow-3f65c4cc.japaneast.azurecontainerapps.io # http://localhost:3500/v1.0/invoke/ctapp-demo-api/method # 準備タスクで作成された API Container App のアプリケーション URL をここに記載
 
 jobs:
   build:
